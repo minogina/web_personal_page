@@ -14,7 +14,7 @@
 		<div>
 			<div>
 				<p><h3>Лабораторная работа №1<br>
-				&quot;Исследование возможностей языка разметки гипертекстов HTML и каскадных таблиц стилей CSS&quot;</h3></p>				
+				&quot;Исследование возможностей языка разметки гипертекстов HTML и каскадных таблиц стилей CSS&quot;</h3></p>
 			</div>
 			<div class="header">
 			<p>
@@ -22,7 +22,7 @@
 				<h5>Миногина Наталья Михайловна<br>
 				ИС/б-35-о</h5>
 			</p>
-			</div>			
+			</div>
 		</div>
 	</header>
 	<nav class="navbar navbar-inverse">
@@ -49,11 +49,11 @@
 			Заполните форму на сайте, чтобы связаться со мной.
 		</p>
 			Фамилия:
-			<input type="text" name="surname" class="inp" required pattern="^[a-zA-Zа-яА-Я]+$">
+			<input type="text" name="surname" placeholder="Иванов" class="inp" required pattern="^[a-zA-Zа-яА-Я]+$">
 			Имя:
-			<input type="text" name="name" class="inp" required pattern="^[a-zA-Zа-яА-Я]+$">
+			<input type="text" name="name" placeholder="Иван" class="inp" required pattern="^[a-zA-Zа-яА-Я]+$">
 			Отчество:
-			<input type="text" name="patronymic" class="inp" required pattern="^[a-zA-Zа-яА-Я]+$"><br>
+			<input type="text" name="patronymic" placeholder="Иванович" class="inp" required pattern="^[a-zA-Zа-яА-Я]+$"><br>
 			Пол:
 			<input type="radio" name="gender" required>Мужской
 			<input type="radio" name="gender" required>Женский<br>
@@ -65,9 +65,9 @@
 				<option value="sixtyplus">60+</option>
 			</select><br>
 			E-mail:
-			<input type="email" name="email" class="inp" required><br>
+			<input type="email" name="email" placeholder="example@example.ru" class="inp" required><br>
 			Номер телефона:
-			<input type="tel" name="phone_number" class="inp" required pattern="^\+?([3,7])\)?([0-9]{10})$"><br>			
+			<input type="tel" name="phone_number" placeholder="+7XXXXXXXXXX" class="inp" required pattern="^\+?([3,7])\)?([0-9]{10})$"><br>
 			Сообщение:<br>
 			<textarea name="message" rows="10" cols="86" class="inp" required></textarea><br>
 			<input type="submit" value="Отправить" class="send">

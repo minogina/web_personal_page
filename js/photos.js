@@ -2,7 +2,7 @@ function createTable()
 {
 	var path = "../img/";
 	var number = 15;
-	var type = ".jpg";
+	var type = "_crop.jpg";
 	var img_class = "class=\"img-rounded\" title=\"";
 
 	var fotos = new Array(number);
