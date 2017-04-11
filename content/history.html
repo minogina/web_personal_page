@@ -4,12 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Персональный сайт Натальи Миногиной. Фотоальбом.</title>
+	<title>Персональный сайт Натальи Миногиной. История просмотра.</title>
 
 	<link rel="stylesheet" type="text/css" href="../CSS/BS/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/main.css">
 
-	<script type="text/javascript" src="../js/photos.js"></script>
 	<script type="text/javascript" src="../js/date.js"></script>
 	<script type="text/javascript" src="../js/local_storage.js"></script>
 </head>
@@ -22,7 +21,7 @@
 				<h5>Миногина Наталья Михайловна<br>
 				ИС/б-35-о</h5>
 			</p>
-			</div>			
+			</div>
 		</div>
 	</header>
 	<nav class="navbar navbar-inverse">
@@ -38,17 +37,17 @@
 					<li><a href="interests.html#movies">Фильмы</a></li>
 				</ul></li>
 				<li><a href="study.html">Учёба</a></li>
-				<li class="active"><a href="photoalbum.html">Фотоальбом</a></li>
+				<li><a href="photoalbum.html">Фотоальбом</a></li>
 				<li><a href="contact.html">Контакт</a></li>
 				<li><a href="subject_test.html">Тест по дисциплине</a></li>
-				<li><a href="history.html">История просмотра</a></li>
+				<li class="active"><a href="history.html">История просмотра</a></li>
 			</ul>
 		</div>
 	</nav>
-	<section id="img_table">
-	<script type="text/javascript">
-		createTable();
-	</script>
+	<section id="section">
+		<script type="text/javascript">
+			printHistory();
+		</script>
 	</section>
 	<footer>
 		<p>2017 &copy; Copyright </p>

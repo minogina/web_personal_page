@@ -3,7 +3,7 @@ function createTable()
 	var path = "../img/";
 	var number = 15;
 	var type = "_crop.jpg";
-	var img_class = "class=\"img-rounded\" title=\"";
+	var img_class = "class=\"img-rounded\" onClick=\"view(this);\" title=\"";
 
 	var fotos = new Array(number);
 	var titles = new Array(number);
@@ -43,4 +43,9 @@ function createTable()
 		}
 		document.getElementById('img_table').innerHTML = html;
 	}
+}
+
+function view (img) {
+	imgsrc = img.src.split("_crop")[0] + ".jpg";
+	viewmin = window.open(imgsrc, 'viewmin', 'width=1280, height=848');
 }

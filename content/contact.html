@@ -8,14 +8,13 @@
 
 	<link rel="stylesheet" type="text/css" href="../CSS/BS/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/main.css">
+
+	<script type="text/javascript" src="../js/date.js"></script>
+	<script type="text/javascript" src="../js/local_storage.js"></script>
 </head>
 <body>
 	<header>
 		<div>
-			<div>
-				<p><h3>Лабораторная работа №1<br>
-				&quot;Исследование возможностей языка разметки гипертекстов HTML и каскадных таблиц стилей CSS&quot;</h3></p>
-			</div>
 			<div class="header">
 			<p>
 				<img src="../img/Rin.jpg" class="avatar img-circle">
@@ -27,6 +26,7 @@
 	</header>
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
+			<p id="data" class="date"></p>
 			<ul class="nav navbar-nav menu">
 				<li><a href="../index.html">Обо мне</a></li>
 				<li><a href="interests.html">Мои интересы</a>
@@ -40,6 +40,7 @@
 				<li><a href="photoalbum.html">Фотоальбом</a></li>
 				<li class="active"><a href="contact.html">Контакт</a></li>
 				<li><a href="subject_test.html">Тест по дисциплине</a></li>
+				<li><a href="history.html">История просмотра</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -49,29 +50,48 @@
 			Заполните форму на сайте, чтобы связаться со мной.
 		</p>
 			Фамилия:
-			<input type="text" name="surname" placeholder="Иванов" class="inp" required pattern="^[a-zA-Zа-яА-Я]+$">
+			<input type="text" id ="fio" name="surname" placeholder="Иванов" class="inp" required pattern="^[a-zA-Zа-яА-Я]+$">
 			Имя:
-			<input type="text" name="name" placeholder="Иван" class="inp" required pattern="^[a-zA-Zа-яА-Я]+$">
+			<input type="text" id ="fio" name="name" placeholder="Иван" class="inp" required pattern="^[a-zA-Zа-яА-Я]+$">
 			Отчество:
-			<input type="text" name="patronymic" placeholder="Иванович" class="inp" required pattern="^[a-zA-Zа-яА-Я]+$"><br>
+			<input type="text" id ="fio" name="patronymic" placeholder="Иванович" class="inp" required pattern="^[a-zA-Zа-яА-Я]+$"><br>
 			Пол:
-			<input type="radio" name="gender" required>Мужской
-			<input type="radio" name="gender" required>Женский<br>
-			Возраст:
-			<select name="age" required class="inp">
-				<option value="under_eighteen">Ниже 18</option>
-				<option value="nineteen_thirty">19-30</option>
-				<option value="thirtyone_sixty">31-60</option>
-				<option value="sixtyplus">60+</option>
-			</select><br>
+			<input type="radio" id="radio" name="gender" required>Мужской
+			<input type="radio" id="radio" name="gender" required>Женский<br>
+			Дата Рождения:<br>
+			<select name="month" required class="inp">
+				<option value="December">Декабрь</option>
+				<option value="January">Январь</option>
+				<option value="February">Февраль</option>
+				<option value="March">Март</option>
+				<option value="April">Апрель</option>
+				<option value="May">Май</option>
+				<option value="June">Июнь</option>
+				<option value="July">Июль</option>
+				<option value="August">Август</option>
+				<option value="September">Сентябрь</option>
+				<option value="Oktober">Октябрь</option>
+				<option value="November">Ноябрь</option>
+			</select>
+			<select id="year" name="year" required class ="inp">
+				<script type="text/javascript">
+					Calendar();
+				</script>
+			</select>
+			<div id="day" class="calendar">
+				<script type="text/javascript">
+					Calendar_day();
+					
+				</script>
+			</div><br>
 			E-mail:
 			<input type="email" name="email" placeholder="example@example.ru" class="inp" required><br>
 			Номер телефона:
-			<input type="tel" name="phone_number" placeholder="+7XXXXXXXXXX" class="inp" required pattern="^\+?([3,7])\)?([0-9]{10})$"><br>
+			<input type="tel" id="phone_number" name="phone_number" placeholder="+7XXXXXXXXXX" class="inp" required pattern="^\+?([3,7])\)?([0-9]{10})$"><br>
 			Сообщение:<br>
-			<textarea name="message" rows="10" cols="86" class="inp" required></textarea><br>
-			<input type="submit" value="Отправить" class="send">
-			<input type="reset" value="Очистить форму" class="send">
+			<textarea name="message" rows="10" cols="86" style="width: 100%" class="inp" required></textarea><br>
+			<input type="submit" id="submitButton" value="Отправить" class="send">
+			<input type="reset" id="reset" value="Очистить форму" class="send">
 		</form>
 	</section>
 	<footer>
