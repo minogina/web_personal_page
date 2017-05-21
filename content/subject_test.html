@@ -8,10 +8,14 @@
 
 	<link rel="stylesheet" type="text/css" href="../CSS/BS/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/jquery-ui.css">
 
-	<script type="text/javascript" src="../js/test_check.js"></script>
+	<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.js"></script>
 	<script type="text/javascript" src="../js/date.js"></script>
 	<script type="text/javascript" src="../js/local_storage.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/test_check.js"></script>	
 </head>
 <body>
 	<header>
@@ -46,7 +50,7 @@
 		</div>
 	</nav>
 	<section>
-		<form action="mailto:natalia.minogina@example.com" name="test">
+		<form action="mailto:natalia.minogina@example.com">
 		<h3>Тест по дисциплине &quot;Высшая математика&quot;</h3>
 			Фамилия:
 			<input type="text" class="inp" name="surname" placeholder="Иванов" required pattern="^[a-zA-Zа-яА-Я]+$">
@@ -81,7 +85,7 @@
 			</select><br>
 			<br>
 			1.Запишите формулу сложения <i>sin(a+b)</i><br>
-			<textarea id="message" name="message" class="inp ar" rows="1" cols="8" required onchange="answer_check()"></textarea><br>
+			<textarea id="message" name="message" class="inp ar" rows="1" cols="8" required onchange="answer_check()" data-container="body" data-toggle="popover" data-placement="right" data-content="Пример Popover"></textarea><br>
 			<br>
 			2.Функция <i>f(x)</i> - бесконечно большая, если её предел равен<br>
 			<input type="radio" name="zero" required>бесконечности.

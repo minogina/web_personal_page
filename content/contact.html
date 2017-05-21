@@ -8,9 +8,12 @@
 
 	<link rel="stylesheet" type="text/css" href="../CSS/BS/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/jquery-ui.css">
 
 	<script type="text/javascript" src="../js/date.js"></script>
 	<script type="text/javascript" src="../js/local_storage.js"></script>
+	<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.js"></script>
 </head>
 <body>
 	<header>
@@ -55,37 +58,16 @@
 			<input type="text" id ="fio" name="name" placeholder="Иван" class="inp" required pattern="^[a-zA-Zа-яА-Я]+$">
 			Отчество:
 			<input type="text" id ="fio" name="patronymic" placeholder="Иванович" class="inp" required pattern="^[a-zA-Zа-яА-Я]+$"><br>
+			Дата Рождения:
+			<input type="text" id="birthday" name="birthday" class="inp" required>
+				<script type="text/javascript">
+					Calendar();
+			</script>
 			Пол:
 			<input type="radio" id="radio" name="gender" required>Мужской
 			<input type="radio" id="radio" name="gender" required>Женский<br>
-			Дата Рождения:<br>
-			<select name="month" required class="inp">
-				<option value="December">Декабрь</option>
-				<option value="January">Январь</option>
-				<option value="February">Февраль</option>
-				<option value="March">Март</option>
-				<option value="April">Апрель</option>
-				<option value="May">Май</option>
-				<option value="June">Июнь</option>
-				<option value="July">Июль</option>
-				<option value="August">Август</option>
-				<option value="September">Сентябрь</option>
-				<option value="Oktober">Октябрь</option>
-				<option value="November">Ноябрь</option>
-			</select>
-			<select id="year" name="year" required class ="inp">
-				<script type="text/javascript">
-					Calendar();
-				</script>
-			</select>
-			<div id="day" class="calendar">
-				<script type="text/javascript">
-					Calendar_day();
-					
-				</script>
-			</div><br>
 			E-mail:
-			<input type="email" name="email" placeholder="example@example.ru" class="inp" required><br>
+			<input type="email" name="email" placeholder="example@example.ru" class="inp" required>
 			Номер телефона:
 			<input type="tel" id="phone_number" name="phone_number" placeholder="+7XXXXXXXXXX" class="inp" required pattern="^\+?([3,7])\)?([0-9]{10})$"><br>
 			Сообщение:<br>

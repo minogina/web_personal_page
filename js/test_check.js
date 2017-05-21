@@ -7,3 +7,10 @@ function answer_check (){
 		document.getElementById('message').focus();
 	} 	
 }
+
+$(document).ready(function(){ 
+	$('#message').mouseenter(function() { 
+		$('#message').popover('show'); 
+	}); 
+	$('#message').mouseleave(function(){setTimeout(function(){$('#message').popover('hide')}, 2000);}); 
+});

@@ -9,7 +9,7 @@ function setCookie(name,value,expiration){
 }
 
 var expirationDate=new Date();
-expirationDate.setFullYear(expirationDate.getFullYear()+1);
+expirationDate.setMinutes(expirationDate.getMinutes()+1);
 
 function cookies(){
     if(getCookie('n')=='undefined')

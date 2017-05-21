@@ -8,10 +8,15 @@
 
 	<link rel="stylesheet" type="text/css" href="../CSS/BS/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/fotorama.css">
 
+	<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.js"></script>
 	<script type="text/javascript" src="../js/photos.js"></script>
 	<script type="text/javascript" src="../js/date.js"></script>
 	<script type="text/javascript" src="../js/local_storage.js"></script>
+	<script type="text/javascript" src="../js/fotorama.js"></script>
 </head>
 <body>
 	<header>
@@ -49,6 +54,25 @@
 	<script type="text/javascript">
 		createTable();
 	</script>
+	<div id="modal" style="display: none;">
+		<div id="fotorama" class="fotorama" data-width="700" data-ratio="700/467" data-max-width="100%">
+			<img src="../img/1.jpg" data-caption="Рим">
+			<img src="../img/2.jpg" data-caption="Грузия">
+  			<img src="../img/3.jpg" data-caption="Санкт-Петербург">
+  			<img src="../img/4.jpg" data-caption="Москва">
+  			<img src="../img/5.jpg" data-caption="Альпы, Швейцария">
+  			<img src="../img/6.jpg" data-caption="Люцерн, Швейцария">
+  			<img src="../img/7.jpg" data-caption="Озеро Светлое">
+  			<img src="../img/8.jpg" data-caption="Мыс Фиолент">
+  			<img src="../img/9.jpg" data-caption="Нижний Новгород">
+  			<img src="../img/10.jpg" data-caption="остров Лансароте">
+  			<img src="../img/11.jpg" data-caption="остров Лансароте">
+  			<img src="../img/12.jpg" data-caption="остров Лансароте">
+  			<img src="../img/13.jpg" data-caption="Киргизия">
+  			<img src="../img/14.jpg" data-caption="Кронштадт">
+  			<img src="../img/15.jpg" data-caption="Алма-Ата">
+		</div>
+	</div>
 	</section>
 	<footer>
 		<p>2017 &copy; Copyright </p>

@@ -7,11 +7,18 @@
 	<title>Персональный сайт Натальи Миногиной. Обо мне.</title>
 
 	<link rel="stylesheet" type="text/css" href="CSS/BS/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="CSS/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="CSS/main.css">
 
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/date.js"></script>
 	<script type="text/javascript" src="js/local_storage.js"></script>
-	
+	<script type="text/javascript">
+		function showPic () {
+			$("#modal").dialog({modal:true, height:455, width:680});
+		}
+	</script>
 </head>
 <body>
 	<header>
@@ -29,19 +36,19 @@
 		<div class="container-fluid">
 			<p id="data" class="date"></p>
 			<ul class="nav navbar-nav menu">
-				<li class="active"><a href="index.html">Обо мне</a></li>
-				<li><a href="content/interests.html">Мои интересы</a>
+				<li class="active" data-toggle='modal'><a href="index.html">Обо мне</a></li>
+				<li><a href="content/interests.html" data-toggle='modal'>Мои интересы</a>
 				<ul class="submenu">
 					<li><a href="content/interests.html#hobbies">Хобби</a></li>
 					<li><a href="content/interests.html#books">Книги</a></li>
 					<li><a href="content/interests.html#music">Музыка</a></li>
 					<li><a href="content/interests.html#movies">Фильмы</a></li>
 				</ul></li>
-				<li><a href="content/study.html">Учёба</a></li>
-				<li><a href="content/photoalbum.html">Фотоальбом</a></li>
-				<li><a href="content/contact.html">Контакт</a></li>
-				<li><a href="content/subject_test.html">Тест по дисциплине</a></li>
-				<li><a href="content/history.html">История просмотра</a></li>
+				<li><a href="content/study.html" data-toggle='modal'>Учёба</a></li>
+				<li><a href="content/photoalbum.html" data-toggle='modal'>Фотоальбом</a></li>
+				<li><a href="content/contact.html" data-toggle='modal'>Контакт</a></li>
+				<li><a href="content/subject_test.html" data-toggle='modal'>Тест по дисциплине</a></li>
+				<li><a href="content/history.html" data-toggle='modal'>История просмотра</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -51,7 +58,13 @@
 			<p class="section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit ultricies diam. Etiam pretium purus sed libero viverra, ac ultrices mi iaculis. Phasellus eget ornare dui, sit amet ultrices sapien. Praesent cursus, ligula et scelerisque placerat, mi neque mattis lectus, ac faucibus justo ante vitae purus. Curabitur dignissim turpis nec viverra sollicitudin. Nulla in arcu sagittis urna congue pellentesque id in magna. Morbi id scelerisque metus. Maecenas eu tristique metus. Maecenas lacus risus, ultricies et felis et, rutrum malesuada metus. Proin sem diam, consequat id mauris id, cursus pharetra nulla. Sed nec turpis porttitor, eleifend lacus eu, tincidunt sapien. Integer semper est ac purus feugiat, a varius nibh luctus.</p>
 			<p class="section">Quisque a magna ac justo placerat commodo non sit amet leo. Curabitur egestas ante vitae enim dapibus iaculis. Fusce in cursus enim. Duis pulvinar metus nec nunc finibus, in dignissim est rhoncus. Phasellus mauris dui, feugiat euismod dolor non, faucibus gravida nisi. Quisque interdum non massa eget dapibus. Vestibulum leo felis, volutpat et fermentum vitae, maximus mattis leo. Curabitur porta metus et venenatis molestie. Nunc at nisl quis purus blandit vehicula. Morbi vel metus ante. Pellentesque facilisis libero odio, in commodo felis ultricies non. Aenean accumsan feugiat lorem, eget molestie mauris egestas id. In pretium magna faucibus faucibus hendrerit.</p>
 			<p class="section">Pellentesque eget nibh non felis iaculis placerat sed quis augue. Duis quam est, finibus id nibh vel, cursus luctus libero. Cras vestibulum accumsan eros ac molestie. Etiam fringilla orci id urna rutrum, in venenatis turpis condimentum. Cras sagittis urna sit amet volutpat lacinia. Suspendisse dapibus dignissim tortor a bibendum. Vestibulum ac mi aliquam, pharetra ipsum rhoncus, commodo libero. Donec nulla erat, accumsan hendrerit hendrerit et, dapibus et purus. Morbi at faucibus dolor.</p>
-		</article>
+		</article><br>
+		<div style="text-align: center;">
+			<button class="send" onClick="showPic();">Специально для Андрея Константиновича</button>
+		</div>
+		<div id="modal" style="display: none; text-align: center;">
+			<img src="img/pinki_pai.png">			
+		</div>
 	</section>
 	<footer>
 		<p>2017 &copy; Copyright </p>
